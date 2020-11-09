@@ -4,18 +4,26 @@
 //
 //  Last Modified:  7 November 2003
 //
+//  modified by K. K. Ullrich
+// 
+//  Last Modified: 28 October 2020
+//
 //  Do DP on dag of matches to get chains of matches
 
-
+#ifdef __APPLE__
+  #include  <string>
+  #include  <limits>
+#else
+  #include  <string.h>
+  #include  <limits.h>
+#endif
+#include  <iostream>
+#include  <iomanip>
+#include  <fstream>
 #include  <stdio.h>
 #include  <stdlib.h>
-#include  <iostream.h>
-#include  <iomanip.h>
-#include  <fstream.h>
 #include  <math.h>
-#include  <string.h>
 #include  <ctype.h>
-#include  <limits.h>
 #include  <float.h>
 #include  <time.h>
 #include  <assert.h>
@@ -407,7 +415,7 @@ void process_arguments (int argc, char* argv[]) {
   
 
   if (GAP_OPEN_PENALTY > 0) {
-    fprintf (stderr, "The GAP open penalty must be set <= 0\n\n", usage);
+    fprintf (stderr, "The GAP open penalty must be set <= 0\n\n%s", usage);
     exit(2);
   }
   
