@@ -28,7 +28,7 @@ cd dagchainer/src;make clean;make
 ./dagchainer/src/run_DAG_chainer.pl
 ```
 
-# Run 
+# Run Java_XY_plotter
 
 ```
 ./dagchainer/src/Java_XY_plotter/run_XYplot.pl ./dagchainer/src/data_sets/Arabidopsis/Arabidopsis.Release5.matchList.filtered
