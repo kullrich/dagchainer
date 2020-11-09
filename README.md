@@ -19,7 +19,7 @@ Original Project Page:
 
 ```
 git clone https://github.com/kullrich/dagchainer.git
-cd dagchainer/src;make
+cd dagchainer/src;make clean;make
 ```
 
 # Run DAGchainer
