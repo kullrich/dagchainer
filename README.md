@@ -6,6 +6,7 @@ DAGchainer identifies chains of gene pairs sharing conserved order between genom
 Original Project Admins:
 
 [Joshua Orvis](https://sourceforge.net/u/jorvis/)
+
 [Brian Haas](https://sourceforge.net/u/bhaas/)
 
 Original Project Page:
@@ -13,6 +14,29 @@ Original Project Page:
 [http://dagchainer.sourceforge.net/](http://dagchainer.sourceforge.net/)
 
 - only minor changes made to compile on macOS
+
+# Building DAGchainer
+
+```
+git clone https://github.com/kullrich/dagchainer.git
+cd dagchainer/src;make
+```
+
+# Run DAGchainer
+
+```
+./dagchainer/src/run_DAG_chainer.pl
+```
+
+# Run 
+
+```
+./dagchainer/src/Java_XY_plotter/run_XYplot.pl ./dagchainer/src/data_sets/Arabidopsis/Arabidopsis.Release5.matchList.filtered
+```
+
+# Manual
+
+see manual and further options here [http://dagchainer.sourceforge.net/](http://dagchainer.sourceforge.net/)
 
 # References
 
