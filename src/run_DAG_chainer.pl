@@ -425,7 +425,7 @@ sub run_DAG_chainer {
 	}
 	
     my $tmpFile = ".$$.tmpOut";
-    my $cmd = "${progpath}dagchainer.$uname -G $GAP_LENGTH -O $GAP_OPEN_PENALTY -E $GAP_EXTENSION_PENALTY -S $MIN_ALIGNMENT_SCORE -D $MAX_DIST_BETWEEN_MATCHES  -F $filename $reverseOrientFlag > $tmpFile";
+    my $cmd = "${progpath}dagchainer -G $GAP_LENGTH -O $GAP_OPEN_PENALTY -E $GAP_EXTENSION_PENALTY -S $MIN_ALIGNMENT_SCORE -D $MAX_DIST_BETWEEN_MATCHES  -F $filename $reverseOrientFlag > $tmpFile";
     print "CMD: $cmd \n";
     my $ret = system $cmd;
     if ($ret) {
