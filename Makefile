@@ -1,14 +1,15 @@
+PREFIX?=/usr/local
 BINDIR=bin
 SRCDIR=src
 PROG=dagchainer
 ACCESSORY=accessory_scripts
-
+CC=g++
 CCFLAGS=-03 -fomit-frame-pointer -Wno-deprecated
 
 all: ${BINDIR} ${PROG} ${ACCESSORY}
 
 ${PROG} : ${SRCDIR}/dagchainer.cpp
-	g++ -o ${PREFIX}/${BINDIR}/${PROG} ${SRCDIR}/dagchainer.cpp -Wno-deprecated
+	${CC} -o ${PREFIX}/${BINDIR}/${PROG} ${SRCDIR}/dagchainer.cpp -Wno-deprecated
 	cp ${SRCDIR}/run_DAG_chainer.pl ${PREFIX}/${BINDIR}/
 
 ${BINDIR} :
