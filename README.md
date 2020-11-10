@@ -19,19 +19,27 @@ Original Project Page:
 
 ```
 git clone https://github.com/kullrich/dagchainer.git
-cd dagchainer/src;make clean;make
+export PREFIX="."
+cd dagchainer;make clean;make
 ```
 
 # Run DAGchainer
 
 ```
-./dagchainer/src/run_DAG_chainer.pl
+./dagchainer/bin/run_DAG_chainer.pl
 ```
 
 # Run Java_XY_plotter
 
 ```
 ./dagchainer/src/Java_XY_plotter/run_XYplot.pl ./dagchainer/src/data_sets/Arabidopsis/Arabidopsis.Release5.matchList.filtered
+```
+
+# Example
+
+```
+./dagchainer/bin/run_DAG_chainer.pl -i ./dagchainer/src/data_sets/Arabidopsis/Arabidopsis.Release5.matchList.filtered -s -I
+less ./dagchainer/src/data_sets/Arabidopsis/Arabidopsis.Release5.matchList.filtered.aligncoords
 ```
 
 # Manual
