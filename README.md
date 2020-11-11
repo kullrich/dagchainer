@@ -23,6 +23,16 @@ export PREFIX="."
 cd dagchainer;make clean;make
 ```
 
+# Building DAGchainer - Bioconda
+
+```
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
+conda install dagchainer
+```
+
 # Run DAGchainer
 
 ```
