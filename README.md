@@ -1,4 +1,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4273760.svg)](https://doi.org/10.5281/zenodo.4273760)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/dagchainer/badges/installer/conda.svg)](https://conda.anaconda.org/bioconda)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/dagchainer/badges/downloads.svg)](https://anaconda.org/bioconda/dagchainer)
 
 # dagchainer
 Fork of the DAGchainer project https://sourceforge.net/projects/dagchainer
